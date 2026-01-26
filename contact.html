@@ -1,13 +1,26 @@
-<section class="section slide-up">
-  <h1>Contact Us</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Metanoia</title>
+<meta name="description" content="Contact Metanoia Business Solutions.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <form action="./thank-you.html"
-        onsubmit="gtag('event','lead_submit',{event_category:'Lead',event_label:'Contact Form'});">
+<header><img src="images/logo.png"></header>
 
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="How can we help?" required></textarea>
+<section class="fade-up">
+<h1>Contact Us</h1>
 
-    <button type="submit" class="cta-button">Submit</button>
-  </form>
+<form action="thank-you.html"
+onsubmit="gtag('event','lead_submit',{event_category:'Lead',event_label:'Contact'});">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
 </section>
+
+<footer>© 2026 Metanoia Business Solutions</footer>
+</body>
+</html>
