@@ -1,0 +1,129 @@
+/* ======================
+   GLOBAL RESET & COLORS
+====================== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: #E6EEF5;
+  color: #2B2B2B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ======================
+   NAVIGATION
+====================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  background: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo img { height: 44px; }
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #2B2B2B;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #F5B301;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after { width: 100%; }
+
+.cta { font-weight: 600; color: #F5B301; }
+
+/* ======================
+   HERO & SECTIONS
+====================== */
+.hero {
+  background: #FFFFFF;
+  padding: 140px 40px;
+  text-align: center;
+}
+
+.hero h1 { font-size: 46px; margin-bottom: 14px; }
+.hero p { color: #555; letter-spacing: 0.6px; }
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.panel {
+  background: #F2F6FA;
+  border-radius: 28px;
+  margin: 60px auto;
+}
+
+/* ======================
+   CTA SECTION
+====================== */
+.cta-section {
+  background: linear-gradient(135deg, #F2F6FA, #E6EEF5);
+  padding: 90px 40px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 120px auto;
+  max-width: 1100px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 30px;
+  background: #F5B301;
+  color: #2B2B2B;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.15);
+}
+
+/* ======================
+   CLIENT GRID
+====================== */
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 36px;
+  margin-top: 50px;
+}
+
+.clients-grid img {
+  max-width: 140px;
+  margin: auto;
+  opacity: 0.75;
+}
+
+footer {
+  background: #2B2B2B;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 32px;
+  font-size: 13px;
+}
