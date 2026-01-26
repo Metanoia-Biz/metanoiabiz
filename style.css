@@ -1,205 +1,139 @@
-/* =========================
-   METANOIA BUSINESS SOLUTIONS
-   Apple-grade minimal design
-   ========================= */
+:root {
+  --primary: #0a0a0a;
+  --secondary: #6e6e73;
+  --accent: #0071e3;
+  --bg: #ffffff;
+}
 
-/* ---- CSS RESET ---- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
 }
 
-/* ---- ROOT VARIABLES ---- */
-:root {
-  --bg-primary: #f4f7fb;
-  --bg-secondary: #e9eef5;
-  --text-primary: #1f2933;
-  --text-muted: #5f6c7b;
-  --accent: #f4b400;
-  --accent-hover: #d39e00;
-  --white: #ffffff;
-}
-
-/* ---- BASE STYLES ---- */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-               "Helvetica Neue", Arial, sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+  background: var(--bg);
+  color: var(--primary);
+  line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* ---- NAVBAR ---- */
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
+header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 18px 64px;
-  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+  padding: 28px 8%;
+  border-bottom: 1px solid #eee;
 }
 
-.logo img {
-  height: 38px;
+header img {
+  height: 42px;
 }
 
 nav a {
-  margin-left: 28px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-primary);
-  transition: opacity 0.2s ease;
+  margin-left: 22px;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 15px;
 }
 
 nav a:hover {
-  opacity: 0.7;
+  color: var(--accent);
 }
 
-nav a.cta {
-  background: var(--accent);
-  color: #000;
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-weight: 600;
+section {
+  padding: 90px 10%;
 }
 
-nav a.cta:hover {
-  background: var(--accent-hover);
-}
-
-/* ---- HERO ---- */
-.hero {
-  padding: 140px 24px 120px;
-  text-align: center;
-  background: linear-gradient(
-    180deg,
-    var(--bg-secondary) 0%,
-    var(--bg-primary) 100%
-  );
-}
-
-.hero h1 {
-  font-size: 56px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 20px;
-  color: var(--text-muted);
-  margin-bottom: 36px;
-}
-
-/* ---- SECTIONS ---- */
-.section {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 100px 24px;
-}
-
-.section h1,
-.section h2 {
-  font-size: 36px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+h1 {
+  font-size: 52px;
   margin-bottom: 20px;
 }
 
-.section p {
+h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+p {
   font-size: 18px;
-  color: var(--text-muted);
-  max-width: 720px;
+  color: var(--secondary);
+  max-width: 900px;
 }
 
-/* ---- CTA BUTTON ---- */
-.cta-button {
+.cta {
   display: inline-block;
-  margin-top: 32px;
+  margin-top: 28px;
+  padding: 14px 28px;
   background: var(--accent);
-  color: #000;
-  padding: 14px 34px;
-  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 24px;
   font-size: 16px;
-  font-weight: 600;
-  transition: all 0.25s ease;
 }
 
-.cta-button:hover {
-  background: var(--accent-hover);
-  transform: translateY(-1px);
+.cta:hover {
+  opacity: 0.85;
 }
 
-/* ---- FOOTER ---- */
-footer {
-  text-align: center;
-  padding: 48px 24px;
-  font-size: 14px;
-  color: var(--text-muted);
-  border-top: 1px solid #e5e7eb;
-  background: var(--white);
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* ---- RESPONSIVE ---- */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 16px 24px;
-  }
-
-  nav a {
-    margin-left: 16px;
-    font-size: 13px;
-  }
-
-  .hero h1 {
-    font-size: 40px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .section {
-    padding: 72px 24px;
-  }
-}
-/* Subtle Apple-style animations */
-.fade-in {
-  animation: fadeIn 1.2s ease forwards;
-}
-
-.slide-up {
-  animation: slideUp 1s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
+@keyframes fadeUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* CLIENT LOGOS */
+.clients {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.clients img {
+  width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.clients img:hover {
+  transform: scale(1.15);
+}
+
+/* FORMS */
+form {
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 14px 26px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--secondary);
 }
