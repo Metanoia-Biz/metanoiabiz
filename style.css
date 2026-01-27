@@ -141,3 +141,30 @@ footer {
   color: var(--grey);
   font-size: 14px;
 }
+/* ===== LOGO BASE ===== */
+.logo img {
+  height: 36px;
+  width: auto;
+  opacity: 0.9;
+}
+
+/* ===== WATERMARK LOGO (INNER PAGES) ===== */
+.page-watermark {
+  position: absolute;
+  top: 120px;
+  right: 8%;
+  width: 420px;
+  opacity: 0.05; /* 👈 faint */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+  .page-watermark {
+    width: 260px;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
