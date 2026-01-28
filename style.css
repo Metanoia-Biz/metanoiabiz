@@ -782,107 +782,123 @@ img {
   z-index: 1;
 }
 
-/* ===========================
-   ABOUT PAGE – FINAL LAYOUT
-=========================== */
+/* ===============================
+   ABOUT PAGE – FINAL AESTHETIC FIX
+   =============================== */
 
 .about-page {
-  height: calc(100vh - 90px); /* navbar accounted */
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   background: #ffffff;
   overflow: hidden;
 }
 
+/* Big centered watermark */
 .about-watermark {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
   z-index: 0;
 }
 
 .about-watermark img {
-  width: 90vw;
+  width: 85%;
   max-width: 1100px;
-  opacity: 0.12;              /* visible but elegant */
-  filter: grayscale(100%);
-  pointer-events: none;
+  opacity: 0.7; /* as requested */
 }
 
+/* Content container */
 .about-content {
   position: relative;
-  z-index: 1;
-  height: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 24px;
-
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  align-items: center;
-}
-
-/* HERO */
-.about-hero {
+  z-index: 2;
+  max-width: 1100px;
+  width: 100%;
+  padding: 40px;
   text-align: center;
 }
 
-.about-hero h1 {
-  font-size: 44px;
-  margin: 12px 0 16px;
+/* Eyebrow */
+.about-eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #777;
+  margin-bottom: 14px;
 }
 
-.about-hero p {
-  max-width: 900px;
-  margin: auto;
+/* Main headline */
+.about-title {
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+/* Intro paragraph */
+.about-intro {
+  max-width: 820px;
+  margin: 0 auto 60px;
   font-size: 18px;
-  color: #555;
-  line-height: 1.6;
+  line-height: 1.65;
+  color: #444;
 }
 
-/* TWO COLUMN BLOCK */
+/* Two-column blocks */
 .about-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  margin-top: 40px;
+  text-align: left;
+  margin-bottom: 60px;
 }
 
-.about-block h2 {
-  font-size: 24px;
+.about-block h3 {
+  font-size: 22px;
   margin-bottom: 12px;
+  color: #111;
 }
 
 .about-block p {
   font-size: 17px;
-  line-height: 1.6;
-  color: #555;
+  line-height: 1.65;
+  color: #444;
 }
 
 /* CTA */
 .about-cta {
-  text-align: center;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-/* MOBILE SAFETY */
+.about-cta a {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 999px;
+  background: #0a66ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(10, 102, 255, 0.25);
+}
+
+/* Mobile */
 @media (max-width: 900px) {
+  .about-title {
+    font-size: 34px;
+  }
+
   .about-columns {
     grid-template-columns: 1fr;
-    gap: 32px;
     text-align: center;
+    gap: 40px;
   }
-
-  .about-watermark img {
-    width: 100vw;
-  }
-}
-
-/* FORCE CENTER ALIGNMENT FOR ABOUT HERO ONLY */
-.about-hero,
-.about-hero h1,
-.about-hero p,
-.about-hero .eyebrow {
-  text-align: center !important;
 }
