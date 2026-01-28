@@ -722,3 +722,16 @@ img {
   opacity: 0.06;
   pointer-events: none;
 }
+
+/* ABOUT PAGE WATERMARK SAFETY FIX */
+
+.watermark-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.watermark-right img {
+  max-width: 520px;
+  opacity: 0.06;
+}
