@@ -222,3 +222,96 @@ footer {
     margin: 0 auto;
   }
 }
+/* ===============================
+   HOME PAGE HERO (NO SCROLL)
+   =============================== */
+
+.home-hero {
+  min-height: calc(100vh - 64px); /* navbar height accounted */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.home-logo {
+  max-width: 360px;
+  width: 80%;
+  margin-bottom: 24px;
+  opacity: 1;
+}
+
+.home-hero h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #6e6e73;
+  margin-bottom: 28px;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+  .home-logo {
+    max-width: 260px;
+  }
+
+  .home-hero h1 {
+    font-size: 34px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* ===============================
+   HOME PAGE HERO (NO SCROLL)
+   =============================== */
+
+.home-hero {
+  min-height: calc(100vh - 64px); /* navbar height accounted */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.home-logo {
+  max-width: 360px;
+  width: 80%;
+  margin-bottom: 24px;
+  opacity: 1;
+}
+
+.home-hero h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #6e6e73;
+  margin-bottom: 28px;
+}
+
+/* Mobile optimisation */
+@media (max-width: 768px) {
+  .home-logo {
+    max-width: 260px;
+  }
+
+  .home-hero h1 {
+    font-size: 34px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+}
