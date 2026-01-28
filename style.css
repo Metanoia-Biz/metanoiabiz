@@ -335,7 +335,7 @@ footer {
 /* Left visual */
 .digital-visual img {
   width: 100%;
-  max-width: 420px;
+  max-width: 300px;
   margin: 0 auto;
   display: block;
 }
@@ -361,7 +361,7 @@ footer {
   }
 
   .digital-visual img {
-    max-width: 280px;
+    max-width: 220px;
     margin-bottom: 24px;
   }
 
