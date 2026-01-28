@@ -803,9 +803,10 @@ img {
 }
 
 .about-watermark img {
-  width: 80vw;
-  max-width: 900px;
-  opacity: 0.06;
+  width: 90vw;
+  max-width: 1100px;
+  opacity: 0.12;              /* visible but elegant */
+  filter: grayscale(100%);
   pointer-events: none;
 }
 
@@ -876,4 +877,12 @@ img {
   .about-watermark img {
     width: 100vw;
   }
+}
+
+/* FORCE CENTER ALIGNMENT FOR ABOUT HERO ONLY */
+.about-hero,
+.about-hero h1,
+.about-hero p,
+.about-hero .eyebrow {
+  text-align: center !important;
 }
