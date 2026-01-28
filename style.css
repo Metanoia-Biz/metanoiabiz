@@ -580,3 +580,105 @@ footer {
     display: none;
   }
 }
+
+/* =========================================================
+   SHARED PAGE LAYOUT – APPLE-STYLE CLEAN SECTIONS
+   Used by About, Digital, AI, Legal, Consulting
+========================================================= */
+
+.page-section {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.content-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  padding: 60px 40px;
+}
+
+.content-text h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 720px;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.two-column-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.two-column-text h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.two-column-text p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   WATERMARK / INFOGRAPHIC IMAGES
+========================================================= */
+
+.watermark-right img {
+  width: 100%;
+  max-width: 520px;
+  opacity: 0.08;
+  margin-left: auto;
+}
+
+.visual-left img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* =========================================================
+   PRIMARY CTA BUTTON – SHARED
+========================================================= */
+
+.primary-btn {
+  display: inline-block;
+  background: #0a66ff;
+  color: #ffffff;
+  padding: 14px 30px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(10, 102, 255, 0.25);
+}
+
+/* ========================*
