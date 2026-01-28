@@ -1182,7 +1182,7 @@ img {
 .about-watermark {
   position: absolute;
   inset: 0;
-  background: url("./image/collaboration.png") no-repeat center 58% 55%;
+  background: url("./image/collaboration.png") no-repeat center 88% 55%;
   background-size: 100%;
   opacity: 0.6;
   z-index: 0;
