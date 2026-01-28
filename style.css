@@ -1096,3 +1096,33 @@ img {
     background-size: cover;
   }
 }
+
+/* ABOUT PAGE WATERMARK – FINAL */
+
+.about-hero {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.about-watermark {
+  position: absolute;
+  inset: 0;
+  background: url("image/collaboration.png") center center no-repeat;
+  background-size: 120%;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  padding: 40px;
+  text-align: center;
+}
