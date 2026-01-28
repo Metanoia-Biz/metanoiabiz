@@ -32,13 +32,20 @@
 <section class="fade-up">
 <h1>Contact Us</h1>
 
-<form action="thank-you.html"
-onsubmit="gtag('event','lead_submit',{event_category:'Lead',event_label:'Contact'});">
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email" required>
-<textarea placeholder="Message"></textarea>
-<button type="submit">Send</button>
+<form name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/thank-you.html">
+
+  <input type="hidden" name="form-name" value="contact">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="primary-btn">Send</button>
 </form>
+
 </section>
 
 <footer>© 2026 Metanoia Business Solutions</footer>
