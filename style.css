@@ -13,8 +13,8 @@
 }
 
 body {
-  background: var(--light);
-  color: var(--black);
+  background: #ffffff;   /* pure white */
+  color: #0b0b0b;
 }
 
 /* HEADER */
@@ -63,6 +63,10 @@ section {
   padding: 110px 40px;
   max-width: 1200px;
   margin: auto;
+}
+
+section + section {
+  border-top: 1px solid #f0f0f0;
 }
 
 .hero {
