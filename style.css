@@ -497,7 +497,7 @@ footer {
   height: 80%;
   background: url("./images/collaboration.png") no-repeat center right;
   background-size: contain;
-  opacity: 0.12;
+  opacity: 0.30;
   pointer-events: none;
 }
 
