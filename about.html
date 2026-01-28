@@ -1,58 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="site-header">
-  <div class="nav-container">
-    <img src="image/logo.png" alt="Metanoia Business Solutions" class="logo">
-
-    <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="consulting.html">Business Consulting</a>
-    <a href="executive-search.html">Executive Search</a>
-    <a href="ai-solutions.html">Voice AI</a>
-    <a href="digital-marketing.html">Digital Marketing</a>
-    <a href="legal.html">Legal</a>
-    <a href="clients.html">Our Partners</a>
-    <a href="about.html">About Us</a>
-    <a href="contact.html" class="nav-cta">Contact</a>
-  </nav>
-  </div>
-</header>
-
 <head>
-<meta charset="UTF-8">
-<title>About Metanoia Business Solutions</title>
-<meta name="description" content="About Metanoia – leadership advisory and AI-driven transformation.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>About Us | Metanoia Business Solutions</title>
 
-<!-- GA -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q018FF5LG0"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-Q018FF5LG0');
-</script>
+  <!-- SEO -->
+  <meta name="description" content="Metanoia Business Solutions partners with organizations to build long-term value through business consulting, leadership advisory, and transformation expertise.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Metanoia Business Solutions">
+  <meta property="og:description" content="We are here to help businesses grow, scale, and build enduring capabilities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metanoiabiz.com/about.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q018FF5LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q018FF5LG0');
+  </script>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-<header>
-<img src="./image/logo.png" alt="Metanoia Business Solutions"
-     class="page-watermark">
+
+<!-- NAVBAR (same across all pages) -->
+<header class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Metanoia Business Solutions">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="consulting.html">Business Consulting</a>
+      <a href="executive-search.html">Executive Search</a>
+      <a href="ai-solutions.html">Voice AI</a>
+      <a href="digital-marketing.html">Digital Marketing</a>
+      <a href="legal.html">Legal</a>
+      <a href="clients.html">Our Partners</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="contact.html" class="cta">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section class="fade-up">
-<h1>About Metanoia</h1>
-<p>We partner with founders, boards and leadership teams to solve complex growth, talent and transformation challenges.</p>
+<!-- ABOUT SECTION -->
+<section class="about-section">
 
-<a class="cta"
-href="contact.html"
-onclick="gtag('event','cta_click',{event_category:'CTA',event_label:'About'});">
-Speak with Us
-</a>
+  <!-- Watermark -->
+  <div class="about-watermark"></div>
+
+  <div class="about-container">
+
+    <p class="eyebrow">WHAT WE DO</p>
+
+    <h1 class="about-title">We Are Here For You</h1>
+
+    <p class="about-intro">
+      Your business is our business. We believe in making your dreams come true and to do this, we equip you with the resources and capabilities to help you grow through our business consulting services.
+      We are prepared to help you at any level, from impartial advice or practical assistance to help you make the most of every opportunity.
+    </p>
+
+    <div class="about-columns">
+
+      <div class="about-block">
+        <h2>About Metanoia</h2>
+        <p>
+          If you have just started or looking to scale up, we have got you covered.
+          As consultants we engage deeply to understand your business and challenges,
+          and through our expertise we help build teams, strengths and capabilities.
+          At the heart of our approach lies the belief that we are here to create long term relationships.
+        </p>
+      </div>
+
+      <div class="about-block">
+        <h2>Our Expertise</h2>
+        <p>
+          Whether you need to expand your Business or if you are a developing business
+          in need of Business Consulting Solution, we can help.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="about-cta">
+      <a href="contact.html"
+         onclick="gtag('event','cta_click',{event_category:'CTA',event_label:'About Contact'});">
+        Speak With Us
+      </a>
+    </div>
+
+  </div>
 </section>
 
-<footer>© 2026 Metanoia Business Solutions</footer>
+<footer class="footer">
+  © 2026 Metanoia Business Solutions
+</footer>
+
 </body>
 </html>
