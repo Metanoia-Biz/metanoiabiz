@@ -315,3 +315,57 @@ footer {
     font-size: 16px;
   }
 }
+
+/* ===============================
+   DIGITAL MARKETING – NO SCROLL
+   =============================== */
+
+.digital-hero {
+  min-height: calc(100vh - 64px); /* account for navbar */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Left visual */
+.digital-visual img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Right content */
+.digital-content h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.digital-content p {
+  font-size: 17px;
+  color: #6e6e73;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+  .digital-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .digital-visual img {
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+
+  .digital-content h1 {
+    font-size: 32px;
+  }
+}
