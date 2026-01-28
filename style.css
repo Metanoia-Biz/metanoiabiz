@@ -735,3 +735,26 @@ img {
   max-width: 520px;
   opacity: 0.06;
 }
+
+
+/* ABOUT PAGE FIX ONLY */
+.about-watermark {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  z-index: 0;
+}
+
+.about-watermark img {
+  width: 480px;
+  max-width: 60vw;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.about-container,
+.page-section,
+.content-grid {
+  position: relative;
+  z-index: 1;
+}
