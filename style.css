@@ -1097,23 +1097,23 @@ img {
   }
 }
 
-/* ABOUT PAGE WATERMARK – FINAL */
+/* ABOUT PAGE FIX */
 
 .about-hero {
-  position: relative;
   min-height: calc(100vh - 90px);
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   background: #ffffff;
+  overflow: hidden;
 }
 
 .about-watermark {
   position: absolute;
   inset: 0;
-  background: url("image/collaboration.png") center center no-repeat;
-  background-size: 120%;
+  background: url("image/collaboration.png") no-repeat center;
+  background-size: 85%;
   opacity: 0.7;
   z-index: 0;
   pointer-events: none;
@@ -1123,6 +1123,44 @@ img {
   position: relative;
   z-index: 1;
   max-width: 1100px;
-  padding: 40px;
   text-align: center;
+  padding: 0 40px;
+}
+
+.about-lead {
+  max-width: 820px;
+  margin: 18px auto 40px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.about-block h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.about-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .about-columns {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .about-watermark {
+    background-size: cover;
+  }
 }
