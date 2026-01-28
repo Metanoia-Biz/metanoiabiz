@@ -1,38 +1,100 @@
 <!DOCTYPE html>
-<html>
-<header class="site-header">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legal & Compliance Advisory | Metanoia Business Solutions</title>
+
+  <meta name="description"
+        content="Legal and compliance advisory covering corporate structuring, contracts, governance and regulatory frameworks.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Legal Advisory | Metanoia Business Solutions">
+  <meta property="og:description"
+        content="Strategic legal and compliance advisory for businesses and institutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metanoiabiz.com/legal.html">
+  <meta property="og:image" content="https://metanoiabiz.com/image/logo.png">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q018FF5LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Q018FF5LG0');
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
   <div class="nav-container">
-    <img src="image/logo.png" alt="Metanoia Business Solutions" class="logo">
+    <a href="index.html" class="logo">
+      <img src="image/logo.png" alt="Metanoia Business Solutions">
+    </a>
 
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="consulting.html">Consulting</a>
+      <a href="consulting.html">Business Consulting</a>
       <a href="executive-search.html">Executive Search</a>
-      <a href="ai-solutions.html">AI</a>
-      <a href="digital-marketing.html">Digital</a>
-      <a href="clients.html">Clients</a>
-      <a href="about.html">About</a>
+      <a href="ai-solutions.html">Voice AI</a>
+      <a href="digital-marketing.html">Digital Marketing</a>
+      <a href="legal.html">Legal</a>
+      <a href="clients.html">Our Partners</a>
+      <a href="about.html">About Us</a>
       <a href="contact.html" class="nav-cta">Contact</a>
     </nav>
   </div>
 </header>
 
-<head>
-<title>Legal & Compliance | Metanoia</title>
-<meta name="description" content="Legal and compliance advisory services.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<img src="./image/logo.png" alt="Metanoia Business Solutions"
+<!-- ===== WATERMARK LOGO (RIGHT) ===== -->
+<img src="image/logo.png"
+     alt="Metanoia Business Solutions"
      class="page-watermark">
 
+<!-- ===== LEGAL HERO ===== -->
+<section class="legal-hero">
 
-<section class="fade-up">
-<h1>Legal & Compliance</h1>
-<p>Advisory across governance, risk and regulatory frameworks.</p>
+  <!-- LEFT: GIF -->
+  <div class="legal-visual">
+    <img src="image/legal.gif"
+         alt="Legal & Compliance Infographic">
+  </div>
+
+  <!-- RIGHT: CONTENT -->
+  <div class="legal-content">
+    <h1>Legal & Compliance Advisory</h1>
+
+    <p>
+      Strategic legal advisory supporting businesses across corporate
+      structuring, contracts, governance, and regulatory compliance.
+    </p>
+
+    <p>
+      Our approach blends legal rigour with commercial understanding,
+      enabling long-term stability and risk mitigation.
+    </p>
+
+    <a href="contact.html"
+       class="cta-btn"
+       onclick="gtag('event','cta_click',{
+         event_category:'CTA',
+         event_label:'Legal Advisory'
+       });">
+       Speak to a Legal Advisor
+    </a>
+  </div>
+
 </section>
 
-<footer>© 2026 Metanoia Business Solutions</footer>
+<footer>
+  © 2026 Metanoia Business Solutions
+</footer>
+
 </body>
 </html>
