@@ -389,7 +389,7 @@ footer {
 /* Left visual */
 .ai-visual img {
   width: 100%;
-  max-width: 300px;        /* matched to Digital */
+  max-width: 260px;        /* matched to Digital */
   margin: 0 auto;
   display: block;
 }
@@ -415,7 +415,7 @@ footer {
   }
 
   .ai-visual img {
-    max-width: 220px;
+    max-width: 200px;
     margin-bottom: 24px;
   }
 
