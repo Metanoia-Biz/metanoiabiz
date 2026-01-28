@@ -682,3 +682,43 @@ footer {
 }
 
 /* ========================*
+
+/* ===============================
+   IMAGE SAFETY FIX (GLOBAL)
+   =============================== */
+
+/* Ensure all images behave */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* NAVBAR LOGO */
+.logo img {
+  height: 36px;
+  width: auto;
+}
+
+/* HOME HERO LOGO */
+.home-logo {
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
+
+/* LEFT-SIDE FEATURE GIFS */
+.digital-visual img,
+.ai-visual img,
+.legal-visual img {
+  max-width: 260px;     /* safe size */
+  margin: 0 auto;
+}
+
+/* WATERMARK IMAGES (ABOUT / INNER PAGES) */
+.about-watermark img,
+.page-watermark,
+.watermark-right img {
+  max-width: 520px;
+  opacity: 0.06;
+  pointer-events: none;
+}
