@@ -758,3 +758,26 @@ img {
   position: relative;
   z-index: 1;
 }
+
+
+/* ABOUT PAGE – WATERMARK VISIBILITY FIX */
+.about-watermark {
+  position: absolute;
+  right: 4%;
+  top: 18%;
+  z-index: 0;
+}
+
+.about-watermark img {
+  width: 520px;
+  max-width: 60vw;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.page-section,
+.content-grid,
+.content-text {
+  position: relative;
+  z-index: 1;
+}
