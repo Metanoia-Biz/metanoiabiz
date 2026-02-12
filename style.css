@@ -1275,6 +1275,6 @@ img {
 }
 
 .legal-visual img {
-    width: 100%;
+    width: 120%;
     max-width: none;     /* remove restriction */
 }
