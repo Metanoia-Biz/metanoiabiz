@@ -1267,3 +1267,14 @@ img {
 }
 
 }
+/* LEGAL IMAGE CONTAINER FIX */
+.legal-visual {
+    flex: 0 0 520px;     /* increase this */
+    display: flex;
+    justify-content: center;
+}
+
+.legal-visual img {
+    width: 100%;
+    max-width: none;     /* remove restriction */
+}
