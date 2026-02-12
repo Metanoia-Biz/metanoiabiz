@@ -1252,4 +1252,9 @@ img {
   .about-watermark {
     background-size: cover;
   }
+  /* Increase Bharat Mandi logo size */
+.bharatmandi-logo {
+  max-width: 180px;   /* adjust as needed */
+}
+
 }
