@@ -1261,5 +1261,9 @@ img {
   max-width: 220px !important;
   width: 220px;
 }
+.clients-grid img.bharatmandi-logo {
+  height: 120px !important;
+  width: auto !important;
+}
 
 }
