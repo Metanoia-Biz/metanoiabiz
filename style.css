@@ -445,7 +445,7 @@ footer {
 /* Left visual */
 .legal-visual img {
   width: 100%;
-  max-width: 420px; /* same cadence as AI & Digital */
+  max-width: 520px; /* same cadence as AI & Digital */
   margin: 0 auto;
   display: block;
 }
