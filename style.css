@@ -1256,5 +1256,10 @@ img {
 .bharatmandi-logo {
   max-width: 220px !important;   /* adjust as needed */
 }
+/* Force larger Bharat Mandi logo */
+.clients-grid img.bharatmandi-logo {
+  max-width: 220px !important;
+  width: 220px;
+}
 
 }
