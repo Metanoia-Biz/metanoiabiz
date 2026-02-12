@@ -435,8 +435,8 @@ footer {
   padding: 40px 24px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
   align-items: center;
   position: relative;
   z-index: 1;
